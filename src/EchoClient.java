@@ -9,7 +9,9 @@ import java.net.Socket;
 
 public class EchoClient {
 public static void main (String [] args) throws IOException {
-	Socket s = new Socket ("localhost", 4564);
+	public static int PORT = 4564;
+	//creating a new socket
+	Socket s = new Socket ("localhost", PORT);
 	
 	System.out.println ("Trying to connect to echoServer");
 	
